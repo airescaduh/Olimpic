@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header p {
+  font-size: 3em;
+}
+
+header h2 {
+  color: #06aa48;
+  margin: 5px;
+}
+
+p {
+  color: #333;
+  text-align: justify;
+  margin: 5px;
+}
+img {
+  width: 100%;
+}
+.imagem1 {
+  max-width: 150px;
+  max-height: 100px;
+}
+a button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  background-color: #19eb6d;
+}
+
+.nav1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 10%;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #ffffff;
+  background-image: linear-gradient(#06aa48, #08d45a);
+}
+.nav1 a {
+  padding: 5px 14px;
+}
+header h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10%;
+  flex-direction: row;
+  text-align: center;
+  color: #ffffff;
+  background-image: linear-gradient(#06aa48, #08d45a);
+}
+figure{
+  color: #555;
+  text-align: justify;
+}
+figcaption{
+  margin: 5px;
+}
+
+article{
+  border: 2px solid #06AA48; 
+  margin: 10px;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+article {
+  border: 2px solid #06aa48;
+  margin: 10px;
+  max-width: 360px;
+}
+
+footer h4 {
+  text-align: center;
+  color: #ffffff;
+  background-image: linear-gradient(#06aa48, #08d45a);
+  padding: 15px;
+}
+
+button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: rgba(12, 143, 44, 0.8);
+  
+}
+
+
+
+
+#txtBusca{
+  float:left;
+  background-color:white;
+  padding-left:5px;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:126px;
+
+}
+
+#btnBusca{
+
+  border:none;
+  float:left;
+  height:32px;
+  border-radius:0 7px 7px 0;
+  width:80px;
+  font-weight:bolder;
+  background-color: #19eb6d;
+
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+#divBusca img{
+  float:left;
+}
+
+.search{
+  width: 20px;
+  height: 20px;
+}
