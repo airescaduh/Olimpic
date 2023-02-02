@@ -169,7 +169,11 @@ button {
   background-color: #000000;
   color: #C060A1;
 }
-.dark figcaption, body.dark{
+.dark figcaption{
+  color: #3b0746;
+  background-color: #C060A1;
+}
+.dark body{
   background-color: #C060A1;
 }
 
