@@ -9,12 +9,12 @@ header p {
 }
 
 header h2 {
-  color: #06aa48;
+
   margin: 5px;
 }
 
 p {
-  color: #333;
+
   text-align: justify;
   margin: 5px;
 }
@@ -29,9 +29,8 @@ a button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 15px;
-  color: white;
   text-decoration: none;
-  background-color: #19eb6d;
+  
 }
 
 .nav1 {
@@ -41,8 +40,8 @@ a button {
   padding: 30px 10%;
   flex-wrap: wrap;
   text-align: center;
-  color: #ffffff;
-  background-image: linear-gradient(#06aa48, #08d45a);
+
+ 
 }
 .nav1 a {
   padding: 5px 14px;
@@ -55,7 +54,7 @@ header h1{
   flex-direction: row;
   text-align: center;
   color: #ffffff;
-  background-image: linear-gradient(#06aa48, #08d45a);
+
 }
 figure{
   color: #555;
@@ -78,7 +77,7 @@ section {
 }
 
 article {
-  border: 2px solid #06aa48;
+  border: 2px solid;
   margin: 10px;
   max-width: 360px;
 }
@@ -86,7 +85,6 @@ article {
 footer h4 {
   text-align: center;
   color: #ffffff;
-  background-image: linear-gradient(#06aa48, #08d45a);
   padding: 15px;
 }
 
@@ -97,10 +95,7 @@ button {
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-button:hover {
-  background-color: rgba(12, 143, 44, 0.8);
-  
-}
+
 
 
 
@@ -124,7 +119,7 @@ button:hover {
   border-radius:0 7px 7px 0;
   width:80px;
   font-weight:bolder;
-  background-color: #19eb6d;
+
 
   padding: 10px 25px;
   border: none;
@@ -139,4 +134,70 @@ button:hover {
 .search{
   width: 20px;
   height: 20px;
+}
+
+
+
+
+.dark, article{
+  border: 2px solid #C060A1; 
+}
+
+.dark .headerImg{
+  color: #6A097D;
+}
+
+.dark .principal, footer.dark, .nav1.dark{
+  color: #F1D4D4;
+  background-image: linear-gradient(#6A097D, #C060A1);
+}
+
+.dark footer{
+  color: #F1D4D4;
+  background-image: linear-gradient(#6A097D, #C060A1);
+}
+
+.dark p{
+  color: #F1D4D4;
+}
+.dark button, figcaption.dark , article.dark {
+  background-color: #000000;
+  color: #C060A1;
+}
+
+.dark, button:hover {
+  background-color: rgba(156, 14, 121, 0.8);
+}
+
+
+
+
+
+.white article{
+  border: 2px solid #A0E4CB; 
+}
+
+.white .headerImg{
+  color: #CFF5E7;
+}
+
+.white .principal,  footer.white, .nav1.white{
+  color: #159bc4;
+  background-image: linear-gradient(#4ebdf0, #CFF5E7);
+}
+.white footer{
+  color: #159bc4;
+  background-image: linear-gradient(#4ebdf0, #CFF5E7);
+}
+
+.white p{
+  color: #59C1BD;
+}
+.white button, figcaption.white, article.white{
+  background-color: #CFF5E7;
+  color: #0D4C92;
+}
+
+.white, button:hover {
+  background-color: rgba(24, 94, 185, 0.8);
 }
