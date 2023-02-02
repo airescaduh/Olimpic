@@ -1,4 +1,5 @@
+const btn = document.getElementById("switch");
 let main = document.querySelector("main");
-    main.classList.add("dark");
-    main.classList.remove("white");
-    
+btn.addEventListener("change", (e) => {
+    main.classList.toggle("dark", e.target.checked);
+})

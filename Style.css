@@ -9,12 +9,10 @@ header p {
 }
 
 header h2 {
-
   margin: 5px;
 }
 
 p {
-
   text-align: justify;
   margin: 5px;
 }
@@ -53,11 +51,9 @@ header h1{
   padding: 30px 10%;
   flex-direction: row;
   text-align: center;
-  color: #ffffff;
 
 }
 figure{
-  color: #555;
   text-align: justify;
 }
 figcaption{
@@ -65,7 +61,7 @@ figcaption{
 }
 
 article{
-  border: 2px solid #06AA48; 
+  border: 2px solid; 
   margin: 10px;
 }
 
@@ -138,16 +134,25 @@ button {
 
 
 
-
-.dark, article{
-  border: 2px solid #C060A1; 
+.dark section{
+  background-color: #C060A1;
+}
+.dark article{
+  background-color: #C060A1;
+  border: 2px solid #6A097D; 
 }
 
 .dark .headerImg{
+  background-color: #C060A1;
   color: #6A097D;
 }
 
 .dark .principal, footer.dark, .nav1.dark{
+  color: #F1D4D4;
+  background-image: linear-gradient(#6A097D, #C060A1);
+}
+
+.dark .nav1{
   color: #F1D4D4;
   background-image: linear-gradient(#6A097D, #C060A1);
 }
@@ -160,12 +165,15 @@ button {
 .dark p{
   color: #F1D4D4;
 }
-.dark button, figcaption.dark , article.dark {
+.dark button, article.dark {
   background-color: #000000;
   color: #C060A1;
 }
+.dark figcaption, body.dark{
+  background-color: #C060A1;
+}
 
-.dark, button:hover {
+.dark button:hover {
   background-color: rgba(156, 14, 121, 0.8);
 }
 
@@ -173,31 +181,77 @@ button {
 
 
 
-.white article{
+article{
   border: 2px solid #A0E4CB; 
 }
 
-.white .headerImg{
-  color: #CFF5E7;
+.headerImg{
+  color: #60e1e6;
 }
-
-.white .principal,  footer.white, .nav1.white{
+body{
+  background-color: #ddf8ee;
+}
+.principal,  footer, .nav1{
   color: #159bc4;
   background-image: linear-gradient(#4ebdf0, #CFF5E7);
 }
-.white footer{
+footer{
   color: #159bc4;
   background-image: linear-gradient(#4ebdf0, #CFF5E7);
 }
 
-.white p{
-  color: #59C1BD;
+p{
+  color: #41cac6;
 }
-.white button, figcaption.white, article.white{
+button, figcaption, article{
   background-color: #CFF5E7;
   color: #0D4C92;
 }
 
-.white, button:hover {
+button:hover {
   background-color: rgba(24, 94, 185, 0.8);
 }
+
+
+input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 25px;
+  background: #4ebdf0;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 14px;
+  height: 14px;
+  background: rgb(0, 0, 0);
+  border-radius: 90px;
+  transition: 0.4s;
+}
+
+input:checked + label {
+  background: #F1D4D4;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 30px;
+}
+
